@@ -1,3 +1,5 @@
+[![TravisCI Build Status](https://travis-ci.org/mlocati/concrete5_handle_manager.svg?branch=master)](https://travis-ci.org/mlocati/concrete5_handle_manager)
+
 # Handle Manager for concrete5
 
 
