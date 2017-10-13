@@ -1,0 +1,38 @@
+{
+	"name": "concrete5/handle_manager",
+	"type": "library",
+	"description": "Handle manager for concrete5",
+	"license": "MIT",
+	"keywords": [
+		"concrete5",
+		"handles"
+	],
+	"require": {
+		"php": ">=5.5.9",
+		"ext-pdo": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"concrete5\\HandleManager\\": "src"
+		}
+	},
+	"require-dev": {
+		"ext-pdo_mysql": "*",
+		"phpunit/phpunit": "^4",
+		"friendsofphp/php-cs-fixer": "2.2.*"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"concrete5\\HandleManager\\Test\\": "test/tests"
+		}
+	},
+	"scripts": {
+		"test": "phpunit",
+		"cs": "php-cs-fixer fix --no-interaction --dry-run --diff --using-cache=no -v --config=.php_cs.dist"
+	},
+	"config" : {
+		"preferred-install" : "dist",
+		"optimize-autoloader" : true,
+		"sort-packages" : true
+	}
+}
