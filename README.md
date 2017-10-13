@@ -42,7 +42,7 @@ if (!$store->isHandleValid($handle)) {
 // Check if a handle is in use
 if ($store->isHandleUsedInSystem($handle, 'translate')) {
     // Users have two options:
-    // 1. change the package handle, if the package is different that the one on the "translate" system
+    // 1. change the package handle, if the package is different that of the "translate" system
     // 2. say that the package is the same, so we can add add the handle to the "prb" system
     if ($case_1) {
         return;
